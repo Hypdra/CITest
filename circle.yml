@@ -11,3 +11,4 @@ jobs:
       - checkout
       - run: dotnet restore ./CIWorkflow.sln
       - run: dotnet build ./CIWorkflow.sln
+      - run: dotnet test ./CIWorkflowTests/CIWorkflowTests.csproj
