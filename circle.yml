@@ -1,9 +1,5 @@
 version: 2
-deployment:
-  dockerhub:
-    branch: master
-    commands:
-      - $DOCKER_HUB_TRIGGER
+
 jobs:
   build:
     working_directory: /temp
@@ -17,4 +13,8 @@ jobs:
       - run: dotnet restore ./CIWorkflow.sln
       - run: dotnet build ./CIWorkflow.sln
       - run: dotnet test ./CIWorkflowTests/CIWorkflowTests.csproj
-
+      - deploy:
+        dockerhub:
+          branch: master
+          commands:
+            - $DOCKER_HUB_TRIGGER
