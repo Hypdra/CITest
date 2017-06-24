@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore:1.1
+FROM microsoft/aspnetcore-build:1.0-1.1
 WORKDIR /app
 RUN ls
 RUN dotnet restore CIWorkflow.sln
