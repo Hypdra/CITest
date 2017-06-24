@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  ciworkflow:
+    image: ciworkflow
+    build:
+      context: ./CIWorkflow
+      dockerfile: Dockerfile

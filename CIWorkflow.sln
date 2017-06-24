@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIWorkflow", "CIWorkflow\CIWorkflow.csproj", "{4D74F1E2-FCD2-40E3-9DD1-0A3A5FAB59EA}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9D18F218-258E-4C8B-A6AF-0B06C7AC2866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIWorkflowTests", "CIWorkflowTests\CIWorkflowTests.csproj", "{6BCD0D15-D930-46D9-BB07-13B08A50AC8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D74F1E2-FCD2-40E3-9DD1-0A3A5FAB59EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D74F1E2-FCD2-40E3-9DD1-0A3A5FAB59EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D74F1E2-FCD2-40E3-9DD1-0A3A5FAB59EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D74F1E2-FCD2-40E3-9DD1-0A3A5FAB59EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D18F218-258E-4C8B-A6AF-0B06C7AC2866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D18F218-258E-4C8B-A6AF-0B06C7AC2866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D18F218-258E-4C8B-A6AF-0B06C7AC2866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D18F218-258E-4C8B-A6AF-0B06C7AC2866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCD0D15-D930-46D9-BB07-13B08A50AC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCD0D15-D930-46D9-BB07-13B08A50AC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCD0D15-D930-46D9-BB07-13B08A50AC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCD0D15-D930-46D9-BB07-13B08A50AC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
