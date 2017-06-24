@@ -1,5 +1,7 @@
 FROM microsoft/aspnetcore-build:1.0-1.1
-RUN dotnet restore ./CIWorkflow.sln
-RUN dotnet publish ./CIWorkflow.sln -c Release
+WORKDIR /app
+
+COPY . ./
+RUN dotnet restore ./CIWorkflow.sln && dotnet publish ./CIWorkflow.sln -c Release -o out
 EXPOSE 80
-ENTRYPOINT ["dotnet", "./CIWorkflow.dll"]
+ENTRYPOINT ["dotnet", "out/CIWorkflow.dll"]
